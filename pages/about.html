@@ -1,0 +1,665 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Imtihon</title> 
+  <link rel="stylesheet" href="../css/About.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+  <style> 
+    .dot:hover{ 
+    background-color: green; 
+    color:white; 
+    
+    } 
+    .bacc-{ 
+      background-image: url(./image/Frame\ 64.svg); 
+      background-size: cover 
+    } 
+    .bg-dark { 
+      background-color: red !important; 
+    } 
+    .navbar-nav .nav-link { 
+      color: white !important; 
+    } 
+    .navbar-brand { 
+      color: white !important; 
+    } 
+    .main-content { 
+      padding: 50px; 
+      text-align: center; 
+    } 
+    .main-content img { 
+      max-width: 100%; 
+      height: auto; 
+    } 
+    .section-content { 
+      padding: 50px; 
+      background-color: #f8f9fa; 
+    } 
+    .section-content img { 
+      width: 100%; 
+      height: auto; 
+      margin-bottom: 20px; 
+    } 
+    footer { 
+      background-color: #fb1100 !important;  
+      color: white; 
+      padding: 40px 0; 
+      text-align: center; 
+    } 
+    footer a { 
+      color: #ffc107; 
+    } 
+    footer a:hover { 
+      color: #fff; 
+    } 
+    .btn-primary:hover { 
+      background-color: #28a745; 
+      border-color: #28a745; 
+    } 
+    #back-to-top { 
+      position: fixed; 
+      bottom: 20px; 
+      right: 20px; 
+      display: none; 
+    } 
+     
+    .col-md-4{ 
+      transition: .5s ease; 
+      border-radius: 35px; 
+    } 
+ 
+    .col-md-4:hover{ 
+      box-shadow: 0px 0px 15px 20px red; 
+    } 
+
+
+
+
+    footer .footer-1 {
+  padding: 292px 0 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-1 .footer-one p,
+footer .footer-1 .footer-two p,
+footer .footer-1 .footer-three p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41.6px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+
+footer .footer-1 .footer-one h1,
+footer .footer-1 .footer-two h1,
+footer .footer-1 .footer-three h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+
+footer .footer-1 .footer-one h2,
+footer .footer-1 .footer-two h2,
+footer .footer-1 .footer-three h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+
+footer .footer-1 .footer-one h2 {
+  margin: 0 auto;
+  width: 139px;
+  height: 52px;
+}
+
+footer .footer-1 .footer-two h1 {
+  max-width: 438px;
+  padding-top: 32px;
+}
+
+footer .footer-1 .footer-two h2 img {
+  max-width: 100%;
+  display: flex;
+  padding-top: 45px;
+  margin: 0 auto;
+}
+
+footer .footer-1 .footer-two h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  padding-top: 80px;
+  text-align: center;
+  color: white;
+}
+
+footer .footer-1 .footer-three h1 {
+  max-width: 158px;
+}
+
+footer .footer-1 .footer-three h2 {
+  margin: 0 auto;
+  max-width: 154px;
+}
+
+@media (max-width: 1200px) {
+  footer .footer-1 {
+    flex-direction: column;
+  }
+}
+
+:root {
+  --bg-red: #ff0000; /* or any color value you need */
+}
+  </style> 
+</head> 
+<body> 
+  <!-- Navbar --> 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+   <img src="./image/Frame 64.svg" alt=""> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+      <span class="navbar-toggler-icon"></span> 
+    </button> 
+    <div class="collapse navbar-collapse" id="navbarNav"> 
+      <ul class="navbar-nav ml-auto"> 
+        <li class="nav-item dropdown active"> 
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownHome"> 
+            <a class="dropdown-item" href="#">Action</a> 
+            <a class="dropdown-item" href="#">Another action</a> 
+            <div class="dropdown-divider"></div> 
+            <a class="dropdown-item" href="#">Something else here</a> 
+          </div> 
+        </li> 
+         <li class="nav-item"> 
+          <a class="nav-link" href="../index.html">Menu</a> 
+        </li> 
+        <li class="nav-item"> 
+   
+        </li> 
+        <li class="nav-item"> 
+          <a class="nav-link" href="./about.html">About Us</a> 
+        </li> 
+        <li class="nav-item"> 
+          <a class="nav-link" href="./contact us.html">Contact Us</a> 
+        </li> 
+        <li class="nav-item">
+    <a class="nav-link ozod" href="https://t.me/your_telegram_bot_or_channel" target="_blank">Log in</a>
+</li>
+        </li> 
+      </ul> 
+    </div> 
+  </nav> 
+  <!-- Main content --> 
+  <div class="main-content"> 
+    <h1 style="width: 949px; 
+    height: 128px; 
+    top: 220px; 
+    left: 326px; 
+    font-family: Cera Round Pro; 
+font-size: 64px; 
+font-weight: 500; 
+line-height: 83.2px; 
+letter-spacing: 0.03em; 
+    margin: 0 auto;">News</h1> 
+    <br><br> 
+  <!-- Section --> 
+  <section class="section-content"> 
+    <div class="container" >  
+      
+      <div class="row"> 
+      <div class="col-md-4"> 
+          <img src="../images/paul-hermann-jeiqzOgwwKU-unsplash 2.png" alt="Values Image"> 
+          <p style="color: black; 
+font-family: Poppins; 
+font-size: 24px; 
+font-weight: 400; 
+line-height: 36px; 
+text-align: left; 
+">Tips for prepping and caring for your grill</p> 
+          <p style="color:  #80818d;   
+width: 361px; 
+height: 72px; 
+top: 446px; 
+left: 20px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 24px; 
+text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+       
+
+
+<p style="width: 79px; 
+height: 19px; 
+top: 535px; 
+left: 311px; 
+opacity: 0.5px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 19.07px; 
+color: #80818d;">16 Apr 2021</p>  
+      </div> 
+        <div class="col-md-4"> 
+          <img src="../images/paul-hermann-jeiqzOgwwKU-unsplash 2.png" alt="Vision Image"> 
+          <p style="color: black;  
+font-family: Poppins; 
+font-size: 24px; 
+font-weight: 400; 
+line-height: 36px; 
+text-align: left; 
+; ">Tips for prepping and caring for your grill</p> 
+          <p style="color:  #80818d;  
+ width: 361px; 
+height: 72px; 
+top: 446px; 
+left: 20px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 24px; 
+text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+    <p style="width: 86px; 
+height: 16px; 
+top: 538px; 
+left: 20px; 
+font-family: Cera Round Pro; 
+font-size: 16px; 
+font-weight: 700; 
+line-height: 16px; 
+letter-spacing: 0.04em; 
+text-align: left; 
+color: red;">Read More</p>  
+<p style="width: 79px; 
+height: 19px; 
+top: 535px; 
+left: 311px; 
+opacity: 0.5px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 19.07px; 
+text-align: left; 
+color: #80818d;">16 Apr 2021</p>     
+      </div> 
+        <div class="col-md-4"> 
+          <img src="../images/paul-hermann-jeiqzOgwwKU-unsplash 2.png" alt="Values Image"> 
+          <p style="color: black; 
+font-family: Poppins; 
+font-size: 24px; 
+font-weight: 400; 
+line-height: 36px; 
+text-align: left; 
+">Tips for prepping and caring for your grill</p> 
+          <p style="color:  #80818d;   
+width: 361px; 
+height: 72px; 
+top: 446px; 
+left: 20px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 24px; 
+text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+        <p style="width: 86px; 
+height: 16px; 
+top: 538px; 
+left: 20px; 
+font-family: Cera Round Pro; 
+font-size: 16px; 
+font-weight: 700; 
+line-height: 16px; 
+letter-spacing: 0.04em; 
+text-align: left; 
+color: red;">Read More</p> 
+<p style="width: 79px; 
+height: 19px; 
+top: 535px; 
+left: 311px; 
+opacity: 0.5px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 19.07px; 
+text-align: left; 
+color: #80818d;">16 Apr 2021</p>  
+      </div> 
+      </div> 
+    </div> 
+  </section> 
+ <section class="section-content"> 
+    <div class="container"> 
+      <h2 style="width: 208px; 
+    height: 64px; 
+    top: 1205px; 
+    left: 696px; 
+    margin: 0 auto;"></h2> 
+      <div class="row"> 
+         <div class="col-md-4"> 
+          <img src="../images/paul-hermann-jeiqzOgwwKU-unsplash 2.png" alt="Values Image"> 
+          <p style="color: black; 
+    font-family: Poppins; 
+    font-size: 24px; 
+    font-weight: 400; 
+    line-height: 36px; 
+    text-align: left; 
+">Tips for prepping and caring for your grill</p> 
+          <p style="color: #80818d; 
+ width: 361px; 
+height: 72px; 
+top: 446px; 
+left: 20px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 24px; 
+text-align: left; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+                <p style="width: 86px; 
+height: 16px; 
+top: 538px; 
+left: 20px; 
+font-family: Cera Round Pro; 
+font-size: 16px; 
+font-weight: 700; 
+line-height: 16px; 
+letter-spacing: 0.04em; 
+text-align: left; 
+color: red;">Read More</p>  
+<p style="width: 79px; 
+height: 19px; 
+top: 535px; 
+left: 311px; 
+opacity: 0.5px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 19.07px; 
+text-align: left; 
+color: #80818d;">16 Apr 2021</p> 
+      </div> 
+        <div class="col-md-4"> 
+          <img src="../images/paul-hermann-jeiqzOgwwKU-unsplash 2.png" alt="Vision Image"> 
+          <p style="color: black;  
+    font-family: Poppins; 
+    font-size: 24px; 
+    font-weight: 400; 
+
+
+
+    line-height: 36px; 
+    text-align: left; 
+ ">Tips for prepping and caring for your grill</p> 
+          <p style="color: #80818d;  
+ width: 361px; 
+height: 72px; 
+top: 446px; 
+left: 20px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 24px; 
+text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+         <p style="width: 86px; 
+height: 16px; 
+top: 538px; 
+left: 20px; 
+font-family: Cera Round Pro; 
+font-size: 16px; 
+font-weight: 700; 
+line-height: 16px; 
+letter-spacing: 0.04em; 
+text-align: left; 
+color: red;">Read More</p>  
+<p style="width: 79px; 
+height: 19px; 
+top: 535px; 
+left: 311px; 
+opacity: 0.5px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 19.07px; 
+text-align: left; 
+color: #80818d;">16 Apr 2021</p> 
+      </div> 
+        <div class="col-md-4"> 
+          <img src="../images/paul-hermann-jeiqzOgwwKU-unsplash 2.png" alt="Values Image"> 
+          <p style="color: black; 
+    font-family: Poppins; 
+    font-size: 24px; 
+    font-weight: 400; 
+    line-height: 36px; 
+    text-align: left; 
+">Tips for prepping and caring for your grill</p> 
+          <p style="color: #80818d; 
+ width: 361px; 
+height: 72px; 
+top: 446px; 
+left: 20px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 24px; 
+text-align: left; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+                <p style="width: 86px; 
+height: 16px; 
+top: 538px; 
+left: 20px; 
+font-family: Cera Round Pro; 
+font-size: 16px; 
+font-weight: 700; 
+line-height: 16px; 
+letter-spacing: 0.04em; 
+text-align: left; 
+color: red;">Read More</p>  
+<p style="width: 79px; 
+height: 19px; 
+top: 535px; 
+left: 311px; 
+opacity: 0.5px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 19.07px; 
+text-align: left; 
+color: #80818d;">16 Apr 2021</p> 
+      </div> 
+      </div> 
+    </div> 
+  </section> 
+   <section class="section-content"> 
+    <div class="container"> 
+      <h2 style="width: 208px; 
+    height: 64px; 
+    top: 1205px; 
+    left: 696px; 
+    margin: 0 auto;"></h2>   
+      <div class="row"> 
+         <div class="col-md-4"> 
+          <img src="../images/paul-hermann-jeiqzOgwwKU-unsplash 2.png" alt="Values Image"> 
+          <p style="color: black; 
+    font-family: Poppins; 
+    font-size: 24px; 
+    font-weight: 400; 
+    line-height: 36px; 
+    text-align: left;  
+">Tips for prepping and caring for your grill</p> 
+          <p style="color: #80818d; 
+          width: 361px; 
+height: 72px; 
+top: 446px; 
+left: 20px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 24px; 
+text-align: left; 
+">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+               <p style="width: 86px; 
+height: 16px; 
+top: 538px; 
+left: 20px; 
+font-family: Cera Round Pro; 
+font-size: 16px; 
+font-weight: 700; 
+line-height: 16px; 
+letter-spacing: 0.04em; 
+text-align: left; 
+color: red;">Read More</p>  
+<p style="width: 79px; 
+height: 19px; 
+top: 535px; 
+left: 311px; 
+opacity: 0.5px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 19.07px; 
+text-align: left; 
+color: #80818d;">16 Apr 2021</p>   
+      </div> 
+        <div class="col-md-4"> 
+          <img src="../images/paul-hermann-jeiqzOgwwKU-unsplash 2.png" alt="Vision Image"> 
+          <p style="color: black;  
+    font-family: Poppins; 
+    font-size: 24px; 
+    font-weight: 400; 
+    line-height: 36px; 
+    text-align: left; 
+; ">Tips for prepping and caring for your grill</p> 
+          <p style="color: #80818d; 
+ width: 361px; 
+height: 72px; 
+top: 446px; 
+left: 20px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 24px; 
+text-align: left; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+           <p style="width: 86px; 
+height: 16px; 
+top: 538px; 
+left: 20px; 
+font-family: Cera Round
+
+
+Pro; 
+font-size: 16px; 
+font-weight: 700; 
+line-height: 16px; 
+letter-spacing: 0.04em; 
+text-align: left; 
+color: red;">Read More</p> 
+<p style="width: 79px; 
+height: 19px; 
+top: 535px; 
+left: 311px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 19.07px; 
+text-align: left; 
+color: #80818d;">16 Apr 2021</p>       
+      </div> 
+        <div class="col-md-4"> 
+          <img src="../images/paul-hermann-jeiqzOgwwKU-unsplash 2.png" alt="Values Image"> 
+          <p style="color: black; 
+    font-family: Poppins; 
+    font-size: 24px; 
+    font-weight: 400; 
+    line-height: 36px; 
+    text-align: left;  
+">Tips for prepping and caring for your grill</p> 
+          <p style="color: #80818d; 
+          width: 361px; 
+height: 72px; 
+top: 446px; 
+left: 20px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 24px; 
+text-align: left; 
+">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mus in.</p> 
+               <p style="width: 86px; 
+height: 16px; 
+top: 538px; 
+left: 20px; 
+font-family: Cera Round Pro; 
+font-size: 16px; 
+font-weight: 700; 
+line-height: 16px; 
+letter-spacing: 0.04em; 
+text-align: left; 
+color: red;">Read More</p>  
+<p style="width: 79px; 
+height: 19px; 
+top: 535px; 
+left: 311px; 
+font-family: Open Sans; 
+font-size: 14px; 
+font-weight: 400; 
+line-height: 19.07px; 
+text-align: left; 
+color: #80818d;">16 Apr 2021</p>   
+      </div> 
+      </div> 
+    </div> 
+  </section> 
+   <div> 
+        <button class="dot" style="border:1px solid #fb1100; border-radius: 3px;">View More</button> 
+      </div> 
+  <div class="bacc-"> 
+  </div> 
+
+  <!--  -->
+ <footer>
+      <div class="container">
+        <div class="footer-1">
+          <div class="footer-one">
+            <p>Contact Us</p>
+            <h1>9 W 53rd St, London, NY 10019, UK</h1>
+            <h2>+1 212-344-1230 +1 212-555-1230</h2>
+          </div>
+          <div class="footer-two">
+            <p><img src="../images/Frame 64 (4).png" alt="No img?" /></p>
+            <h1>
+              "The best way to find yourself is to lose yourself in the service
+              of others.”
+            </h1>
+            <h2><img src="../images/Social media (1).png" alt="No img?" /></h2>
+            <h3>2022 Pop online. All Rights reserved.</h3>
+          </div>
+          <div class="footer-three">
+            <p>Working Hours</p>
+            <h1>Monday-Friday: 08:00 am -12:00 am</h1>
+            <h2>Saturday-Sunday: 07:00am -11:00 pm</h2>
+          </div>
+        </div>
+      </div>
+    </footer>\
+
+    <!--  -->
+
+
+
+
+</body> 
+</html>

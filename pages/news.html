@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+
+  <style>
+/* General styles for the container and section */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.tabs-21 {
+  width: 250px; /* Adjust width as needed */
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #007bff; /* Change to your active tab color */
+  color: #fff;
+}
+
+.nav-pills .nav-link:not(.active):hover {
+  background-color: #f8f9fa; /* Change to your hover color */
+}
+
+.nav-link {
+  display: block;
+  width: 100%;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-content {
+  flex: 1;
+}
+
+.tab-pane {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tab-pane.fade {
+  display: none;
+}
+
+.tab-pane.show {
+  display: block;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+
+/* General styles for the card layout */
+.colss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  flex: 1;
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px; /* Center title and add space below */
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto; /* Center price */
+}
+
+/* General styles for the card layout */
+.colss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  flex: 1;
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px; /* Center title and add space below */
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto; /* Center price */
+}
+/* General styles for the card layout */
+.colss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  flex: 1;
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px; /* Center title and add space below */
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto; /* Center price */
+}
+
+/* General styles for the card layout */
+.colss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  flex: 1;
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px; /* Center title and add space below */
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto; /* Center price */
+}
+
+/* Additional styles for tab content */
+.tab-pane {
+  padding: 20px;
+}
+
+.tab-pane.fade {
+  display: none;
+}
+
+.tab-pane.show {
+  display: block;
+}
+
+/* General styles for the card layout */
+.colss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  flex: 1;
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px; /* Center title and add space below */
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  text-align: center;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto; /* Center price */
+}
+
+/* Additional styles for tab content */
+.tab-pane {
+  padding: 20px;
+}
+
+.tab-pane.fade {
+  display: none;
+}
+
+.tab-pane.show {
+  display: block;
+}
+
+/* General styles for the card layout */
+.colss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust spacing between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  flex: 1;
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px; /* Center title and add space below */
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  text-align: center;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto; /* Center price */
+}
+
+/* Additional styles for tab content */
+.tab-pane {
+  padding: 20px;
+}
+
+.tab-pane.fade {
+  display: none;
+}
+
+.tab-pane.show {
+  display: block;
+}
+
+/* General styles for card layout */
+.colss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  flex: 1;
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px; /* Center title and add space below */
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  text-align: center;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto; /* Center price */
+}
+
+/* Additional styles for tab content */
+.tab-pane {
+  padding: 20px;
+}
+
+.tab-pane.fade {
+  display: none;
+}
+
+.tab-pane.show {
+  display: block;
+}
+
+
+/* General styles for card layout */
+.colss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  flex: 1;
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px; /* Center title and add space below */
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  text-align: center;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto; /* Center price */
+}
+
+/* Additional styles for tab content */
+.tab-pane {
+  padding: 20px;
+}
+
+.tab-pane.fade {
+  display: none;
+}
+
+.tab-pane.show {
+  display: block;
+}
+
+
+/* General styles for card layout */
+.colss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  flex: 1;
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px; /* Center title and add space below */
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  text-align: center;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto; /* Center price */
+}
+
+/* Additional styles for tab content */
+.tab-pane {
+  padding: 20px;
+}
+
+.tab-pane.fade {
+  display: none;
+}
+
+.tab-pane.show {
+  display: block;
+}
+
+/* General styles for card layout */
+.colss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  flex: 1;
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px; /* Center title and add space below */
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  text-align: center;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto; /* Center price */
+}
+
+/* Additional styles for tab content */
+.tab-pane {
+  padding: 20px;
+}
+
+.tab-pane.fade {
+  display: none;
+}
+
+.tab-pane.show {
+  display: block;
+}
+
+
+/* General styles for card layout */
+.colss {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  flex: 1;
+  min-width: 280px; /* Minimum width for responsiveness */
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px; /* Center title and add space below */
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  text-align: center;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto; /* Center price */
+}
+
+/* Additional styles for tab content */
+.tab-pane {
+  padding: 20px;
+}
+
+.tab-pane.fade {
+  display: none;
+}
+
+.tab-pane.show {
+  display: block;
+}
+
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px;
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  text-align: center;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 10px;
+}
+
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38.13px;
+  text-align: center;
+  color: rgba(187, 35, 57, 1);
+  max-width: 89px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+  </style>
+
+
+
+<section>
+      <div class="container">
+        <div class="section-1">
+          <div class="d-flex align-items-start tabs-21">
+            <div
+              class="nav flex-column nav-pills me-3 button_s"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <h1>Our Regular Menu Pack</h1>
+              <button
+                class="nav-link active"
+                id="v-pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-home"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-home"
+                aria-selected="true"
+              >
+                All
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="false"
+              >
+                KEBABS
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-messages-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-messages"
+                aria-selected="false"
+              >
+                PIDES
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-settings-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-settings"
+                aria-selected="false"
+              >
+                BURGERS
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-OTHERDISHES-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-OTHERDISHES"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-OTHERDISHES"
+                aria-selected="false"
+              >
+                OTHER DISHES
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-SIDES-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-SIDES"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-SIDES"
+                aria-selected="false"
+              >
+                SIDES
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-DRINKS-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-DRINKS"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-DRINKS"
+                aria-selected="false"
+              >
+                DRINKS
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-DESSERTS-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-DESSERTS"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-DESSERTS"
+                aria-selected="false"
+              >
+                DESSERTS
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-MEALDEALS-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-MEALDEALS"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-MEALDEALS"
+                aria-selected="false"
+              >
+                MEAL DEALS
+              </button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-home"
+                role="tabpanel"
+                aria-labelledby="v-pills-home-tab"
+                tabindex="0"
+              >
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-profile"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+                tabindex="0"
+              >
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-messages"
+                role="tabpanel"
+                aria-labelledby="v-pills-messages-tab"
+                tabindex="0"
+              >
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img9.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img11.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img1.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-settings"
+                role="tabpanel"
+                aria-labelledby="v-pills-settings-tab"
+                tabindex="0"
+              >
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img2.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                        />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img3.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-OTHERDISHES"
+                role="tabpanel"
+                aria-labelledby="v-pills-OTHERDISHES-tab"
+                tabindex="0"
+              >
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img3.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img5.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-SIDES"
+                role="tabpanel"
+                aria-labelledby="v-pills-SIDES-tab"
+                tabindex="0"
+              >
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img5.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img7.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-DRINKS"
+                role="tabpanel"
+                aria-labelledby="v-pills-DRINKS-tab"
+                tabindex="0"
+              >
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img8.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img6.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-DESSERTS"
+                role="tabpanel"
+                aria-labelledby="v-pills-DESSERTS-tab"
+                tabindex="0"
+              >
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img9.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img10.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-MEALDEALS"
+                role="tabpanel"
+                aria-labelledby="v-pills-MEALDEALS-tab"
+                tabindex="0"
+              >
+                <div class="colss">
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img5.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 tabs">
+                      <img
+                        src="../images/nav-img4.svg"
+                        class="card-img-top"
+                        alt="No img/"
+                      />
+                      <div class="card-body">
+                        <h5
+                          class="card-title"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            text-align: center;
+                            max-width: 340px;
+                          "
+                        >
+                          Barbecue Shish kebab Shashlik Skewer
+                        </h5>
+                        <p
+                          class="card-text"
+                          style="
+                            font-family: Open Sans;
+                            font-size: 28px;
+                            font-weight: 700;
+                            line-height: 38.13px;
+                            text-align: center;
+                            color: rgba(187, 35, 57, 1);
+                            max-width: 89px;
+                          "
+                        >
+                          $12.00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
